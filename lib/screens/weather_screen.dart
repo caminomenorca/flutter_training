@@ -59,7 +59,7 @@ class _WeatherScreenState
   Widget weatherRow(String label, String value) {
     Widget row = Padding(
         padding:
-            EdgeInsets.symmetric(vertical: 16),
+            const EdgeInsets.symmetric(vertical: 16),
         child: Row(children: [
           Expanded(
               flex: 3,
