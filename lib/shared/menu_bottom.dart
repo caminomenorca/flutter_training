@@ -8,6 +8,8 @@ class MenuBottom extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return BottomNavigationBar(
+      unselectedItemColor: Colors.amber,
+      selectedItemColor: Colors.pink,
       onTap: (int index) {
         switch (index) {
           case 0:
@@ -20,6 +22,10 @@ class MenuBottom extends StatelessWidget {
             Navigator.pushNamed(
                 context, '/weather');
             break;
+             case 3:
+            Navigator.pushNamed(
+                context, '/trainings');
+            break;
         }
       },
       items: const [
@@ -27,10 +33,13 @@ class MenuBottom extends StatelessWidget {
             icon: Icon(Icons.home),
             label: 'Home'),
         BottomNavigationBarItem(
-            icon: Icon(Icons.monitor_weight),
+            icon: Icon(Icons.monitor_weight_outlined),
             label: 'BMI'),
         BottomNavigationBarItem(
             icon: Icon(Icons.sunny_snowing),
+            label: 'Weather'),
+        BottomNavigationBarItem(
+            icon: Icon(Icons.fitness_center),
             label: 'Weather')
       ],
     );

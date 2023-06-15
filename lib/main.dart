@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_training/screens/bmi_screen.dart';
 import 'package:flutter_training/screens/intro_screen.dart';
+import 'package:flutter_training/screens/session_screen.dart';
 import 'package:flutter_training/screens/weather_screen.dart';
 
 void main() {
@@ -17,7 +18,8 @@ class GlobeApp extends StatelessWidget {
         routes: {
           '/':(context)=>const IntroScreen(),
           '/bmi':(context)=>const BmiScreen(),
-          '/weather':(context)=>const WeatherScreen()
+          '/weather':(context)=>const WeatherScreen(),
+          '/trainings':(context)=>const SessionsScreen()
         },
         initialRoute: '/',
         );
